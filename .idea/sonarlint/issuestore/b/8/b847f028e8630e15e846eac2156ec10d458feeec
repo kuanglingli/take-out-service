@@ -1,0 +1,20 @@
+
+r	java:S117y"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èõîìúÿÿÿÿ8×¥Í®ÿ/
+Q
+java:S3740_"/Provide the parametrized type for this generic.(ôĞ¡ùÿÿÿÿÿ8×¥Í®ÿ/
+v
+java:S2293E"YReplace the type specification in this constructor call with the diamond operator ("<>").(ŞÏÁê8×¥Í®ÿ/
+d
+java:S1128"BRemove this unused import 'com.itaem.crazy.shirodemo.utils.Utils'.(¡«–‚ıÿÿÿÿ8üŞÑ®ÿ/
+l
+java:S1128"JRemove this unused import 'com.itaem.crazy.shirodemo.project.bean.CustVO'.(¬­€ıúÿÿÿÿ8Ë£àåÿ/
+;
+java:S1128"Remove this duplicated import.(¥ˆıî8×¥Í®ÿ/
+a
+java:S1128"ERemove this unused import 'org.springframework.util.CollectionUtils'.(åå…K8üŞÑ®ÿ/
+v
+java:S2293}"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÀºŸÇ8íÓÌ®ÿ/
+«
+java:S1130x"ˆRemove the declaration of thrown exception 'com.itaem.crazy.shirodemo.Exception.MyException', as it cannot be thrown from method's body.(Çæ¨‰şÿÿÿÿ8Œø‰—0
+|
+java:S4144T"ZUpdate this method so that its implementation is not identical to "updateShop" on line 73.(µÕåªşÿÿÿÿ8»„˜—0

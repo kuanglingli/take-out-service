@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itaem.crazy.shirodemo.project.mapper.OrderMapper">
+    <select id="getOrders" resultType="com.itaem.crazy.shirodemo.project.bean.OrderVO">
+        select
+        o.id,
+        o.primary_order_flag,
+        o.primary_order_id,
+        o.order_id,
+        o.order_name,
+        o.order_imgs,
+        o.order_type,
+        case o.order_type when '1' then '到店自取' when '2' then '商家配送' end orderTypeName,
+        o.order_status,
+        case o.order_status when '0' then '待支付'
+        when '1' then '已支付'
+        when '2' then '制作中'
+        when '3' then '制作完成'
+        when '4' then '已取餐'
+        when '5' then '配送中'
+        when '6' then '订单完成'
+        when '7' then '售后审核'
+        when '8' then '订单取消'
+        end orderStatusName,
+        o.cust_id,
+        o.shop_id,
+        o.item_id,
+        o.item_quantity,
+        o.total_fee,
+        d.contact,
+        d.tel delyTel,
+        o.address,
+        o.remark,
+        o.delete_yn,
+        o.create_time,
+        o.do_time,
+        o.update_time,
+        o.create_id,
+        c.user_name,
+        c.name,
+        c.tel,
+        c.regist_time,
+        i.item_type,
+        case i.item_type when '1' then '实体商品' when '2' then '配送费' end itemTypeName,
+        i.item_name,
+        i.price,
+        i.make_time,
+        i.item_img_url,
+        i.item_desc,
+        s.shop_name,
+        s.shop_tel,
+        s.shop_desc,
+        s.shop_address
+        from t_order o
+        inner join item i on o.item_id = i.item_id and i.delete_yn = '0'
+        inner join shop s on o.shop_id = s.shop_id and s.delete_yn = '0'
+        inner join cust c on o.cust_id = c.cust_id and c.delete_yn = '0'
+        left join delivery d on o.primary_order_id = d.primary_order_id and d.delete_yn = '0'
+        where o.primary_order_flag = '1' and o.delete_yn = '0'
+        <if test="shopId != null">
+
+               and o.shop_id = #{shopId}
+
+        </if>
+        <if test="custId != null">
+
+              and  o.cust_id = #{custId}
+
+        </if>
+        order by o.create_time desc
+    </select>
+    <select id="getOrdersCount" resultType="integer">
+        select
+        count(*)
+        from t_order o
+        inner join item i on o.item_id = i.item_id and i.delete_yn = '0'
+        inner join shop s on o.shop_id = s.shop_id and s.delete_yn = '0'
+        inner join cust c on o.cust_id = c.cust_id and c.delete_yn = '0'
+        left join delivery d on o.primary_order_id = d.primary_order_id and d.delete_yn = '0'
+        where o.primary_order_flag = '1' and o.delete_yn = '0'
+        <if test="shopId != null">
+
+            and o.shop_id = #{shopId}
+
+        </if>
+        <if test="custId != null">
+
+            and  o.cust_id = #{custId}
+
+        </if>
+    </select>
+</mapper>

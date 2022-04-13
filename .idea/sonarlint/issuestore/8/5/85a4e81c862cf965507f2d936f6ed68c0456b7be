@@ -1,0 +1,21 @@
+
+v
+java:S22931"YReplace the type specification in this constructor call with the diamond operator ("<>").(ñ¾Ìß8¸İŒúÿ/
+r
+java:S1128	"PRemove this unused import 'com.itaem.crazy.shirodemo.modules.shiro.entity.User'.(ûÉĞ²ùÿÿÿÿ8ò±“úÿ/
+]
+java:S1128"@Remove this unused import 'org.springframework.beans.BeanUtils'.(ŠğÄÜ8í¼²ûÿ/
+l
+java:S1128"JRemove this unused import 'com.itaem.crazy.shirodemo.project.bean.ItemVO'.(Şƒ‰°ùÿÿÿÿ8¼ğ±ûÿ/
+d
+java:S1128"BRemove this unused import 'com.itaem.crazy.shirodemo.utils.Utils'.(¡«–‚ıÿÿÿÿ8í¼²ûÿ/
+v
+java:S2293:"YReplace the type specification in this constructor call with the diamond operator ("<>").(Å•ºå8šõ«ú€0
+g
+java:S3252S"EUse static access with "com.alibaba.fastjson.JSON" for "parseObject".(å‹’ùÿÿÿÿ8§Ş°ûÿ/
+a
+java:S1128"ERemove this unused import 'org.springframework.util.CollectionUtils'.(åå…K8Ïñúÿ/
+¦
+java:S11305"ˆRemove the declaration of thrown exception 'com.itaem.crazy.shirodemo.Exception.MyException', as it cannot be thrown from method's body.(Ö¹Ç²8·Ø¯ú€0
+«
+java:S1130+"ˆRemove the declaration of thrown exception 'com.itaem.crazy.shirodemo.Exception.MyException', as it cannot be thrown from method's body.(•î“âúÿÿÿÿ8×££úÿ/

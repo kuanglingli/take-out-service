@@ -1,0 +1,7 @@
+
+[
+java:S1858"@"format" returns a string, there's no need to call "toString()".(¥È¨Äüÿÿÿÿ
+[
+java:S1858'"@"format" returns a string, there's no need to call "toString()".(–©ø€ûÿÿÿÿ
+W
+java:S1118":Add a private constructor to hide the implicit public one.(¼Øûì8‘³Ñçÿ/

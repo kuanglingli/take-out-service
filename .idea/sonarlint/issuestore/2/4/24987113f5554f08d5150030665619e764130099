@@ -1,0 +1,15 @@
+
+s
+java:S1128"]Remove this unused import 'com.itaem.crazy.shirodemo.modules.shiro.dao.PermissionRepository'.(ö–Âá
+m
+java:S1128"WRemove this unused import 'com.itaem.crazy.shirodemo.modules.shiro.dao.RoleRepository'.(Ê·
+V
+java:S1128";Remove this unused import 'java.util.concurrent.Executors'.(äåÒÛÿÿÿÿÿ
+n
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ
+`
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(®Ïôîùÿÿÿÿ
+r
+java:S14881"\Immediately return this expression instead of assigning it to the temporary variable "user".(ÍŸôø
+c
+java:S1128"FRemove this unused import 'com.itaem.crazy.shirodemo.utils.UserUtils'.(ö¼ğ8š„¯–0

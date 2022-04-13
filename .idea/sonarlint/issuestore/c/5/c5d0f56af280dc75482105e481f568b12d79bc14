@@ -1,0 +1,8 @@
+
+r
+java:S1488M"\Immediately return this expression instead of assigning it to the temporary variable "info".(×™ÖÍ
+b
+java:S1128"GRemove this unused import 'org.apache.shiro.realm.AuthenticatingRealm'.(˜³Î–þÿÿÿÿ
+”
+java:S1130="yRemove the declaration of thrown exception 'org.apache.shiro.authc.AuthenticationException' which is a runtime exception.(Ë´ã›ùÿÿÿÿ
+V	java:S125)"<This block of commented-out lines of code should be removed.(õ ‡ûÿÿÿÿ

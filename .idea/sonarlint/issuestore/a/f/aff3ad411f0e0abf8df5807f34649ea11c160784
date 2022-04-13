@@ -1,0 +1,15 @@
+
+|
+java:S2293€"YReplace the type specification in this constructor call with the diamond operator ("<>").(’›―ωÿÿÿÿ8°ΈΚ®ÿ/
+`
+java:S3252J"EUse static access with "com.alibaba.fastjson.JSON" for "parseObject".(ε‹’ωÿÿÿÿ
+¦
+java:S1130j"Remove the declaration of thrown exception 'com.itaem.crazy.shirodemo.Exception.MyException', as it cannot be thrown from method's body.(ω”¦‰8Έέο€0
+b
+java:S3252l"EUse static access with "com.alibaba.fastjson.JSON" for "parseObject".(“£·8ά›Αρÿ/
+j
+java:S1128	"HRemove this unused import 'com.itaem.crazy.shirodemo.project.DO.CustDO'.(ΌϊΒ‘ώÿÿÿÿ8υΏ®ÿ/
+t
+java:S2293f"YReplace the type specification in this constructor call with the diamond operator ("<>").(—Σσϊÿÿÿÿ
+{
+java:S2293w"YReplace the type specification in this constructor call with the diamond operator ("<>").(’›―ωÿÿÿÿ8·‹Θ®ÿ/
