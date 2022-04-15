@@ -80,10 +80,13 @@ public class ShopController {
         }
     }
 
-    @PostMapping(value = "setEffect",name = "商户信息更新")
+    @PostMapping(value = "setEffect",name = "生效，失效")
     public Result<ShopVO> setEffect(@RequestBody ShopVO shopVO){
         ShopDO shopDO = new ShopDO();
         BeanUtils.copyProperties(shopVO,shopDO);
+        if(shopDO.getIsEffect().equals("0")){
+            shopDO.setDeleteYn("1");
+        }
         if (shopService.updateById(shopDO)){
             return Result.success();
         }else {
