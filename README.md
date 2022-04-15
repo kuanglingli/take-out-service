@@ -1,1 +1,2 @@
 简单外卖平台后端服务
+springboot+mybatisplus+shiro
