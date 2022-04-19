@@ -14,6 +14,7 @@ import com.itaem.crazy.shirodemo.project.service.OrderService;
 import com.itaem.crazy.shirodemo.project.service.UserRoleService;
 import com.itaem.crazy.shirodemo.utils.UserUtils;
 import com.itaem.crazy.shirodemo.utils.Utils;
+import org.aspectj.weaver.ast.Var;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.CollectionUtils;
@@ -94,8 +95,14 @@ public class OrderController {
                 .eq(OrderDO::getPrimaryOrderId,orderDO.getPrimaryOrderId());
 
         List<OrderDO> list = orderService.list(wrapper);
+        String beforeStatus = "";
         for (OrderDO order:list){
+            beforeStatus = order.getRemark();
+            order.setRemark(order.getOrderStatus());
             order.setOrderStatus(orderVO.getOrderStatus());
+            if ("-1".equals(orderVO.getOrderStatus())){
+                order.setOrderStatus(beforeStatus);
+            }
         }
 
         return new Result<Boolean>("0","操作成功",orderService.updateBatchById(list));
