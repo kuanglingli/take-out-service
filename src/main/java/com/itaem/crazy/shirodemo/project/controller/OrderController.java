@@ -116,7 +116,7 @@ public class OrderController {
         BeanUtils.copyProperties(orderVO,orderDO);
         if ("1".equals(orderDO.getOrderType())){
             meg = "更改配送类型成功";
-            orderDO.setTotalFee((Integer.parseInt(Utils.yuan2Fen(orderDO.getTotalFee()))-300)+"");
+
         }else {
             meg = "已支付3元配送费";
             orderDO.setTotalFee((Integer.parseInt(Utils.yuan2Fen(orderDO.getTotalFee()))+300)+"");
