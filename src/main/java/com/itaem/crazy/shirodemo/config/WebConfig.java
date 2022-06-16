@@ -15,6 +15,7 @@ public class WebConfig implements WebMvcConfigurer {
          * addResourceLocations：资源绝对路径
          */
 //        registry.addResourceHandler("/static/file/").addResourceLocations("file:///C:/soft/workspace/shiro-auth-master/src/main/resources/static/file/");
+        //苹果电脑路径规则跟windows不一样，请自行修改
         registry.addResourceHandler("/file/**").addResourceLocations("file:"+System.getProperty("user.dir")+"\\src\\main\\resources\\static\\file\\");
     }
 }

@@ -1,2 +1,4 @@
 简单外卖平台后端服务
 springboot+mybatisplus+shiro
+
+苹果电脑使用本系统时图片上传若失败，请修改WebConfig类中的路径信息，苹果电脑路径结构与windows系统存在差异，请知悉！
